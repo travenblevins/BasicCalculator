@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="row">
+            <div class="input1"></div>
+            <div class="opp"></div>
+            <div class="input2"></div>
+        </div>
+        <div class="row">
+            <button class="num num1">1</button>
+            <button class="num num2">2</button>
+            <button class="num num3">3</button>
+        </div>
+        <div class="row">
+            <button class="num num4">4</button>
+            <button class="num num5">5</button>
+            <button class="num num6">6</button>
+        </div>
+        <div class="row">
+            <button class="num num7">7</button>
+            <button class="num num8">8</button>
+            <button class="num num9">9</button>
+        </div>
+        <div class="row">
+            <button class="num num0">0</button>
+            <button class="button" onclick="insertOperator('+')">+</button>
+            <button class="button" onclick="insertOperator('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="insertOperator('*')">*</button>
+            <button class="button" onclick="insertOperator('/')">/</button>
+            <button class="button" onclick="operation()">=</button>
+        </div>
+        <div class="row">
+            <button class="deleteButton" onclick="deleteFunc()">Delete</button>
+        </div>
+        <div class="row">
+            <button class="clearButton" onclick="clearFunc()">Clear</button>
+        </div>
+        <div class="row">
+            <p>Sum:</p>
+            <div class="sum"></div>
+        </div>
+    </div>
+</body>
+
+</html>
